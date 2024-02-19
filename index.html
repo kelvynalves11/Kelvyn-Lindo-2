@@ -2,11 +2,31 @@
 <html>
     <head>
     <title> TEST </title>
+
+    <link rel="stylesheet" href="styles.css">
+    <!--
+
+    <style>
+      h1{
+        color: blue;
+        font-size: "30px";
+      } 
+      form{
+        background-color: crimson;
+      }  
+
+    </style>
+    -->
     </head>
+
     <body>
-        <h1>Formulário</h1>
+        <h1 style="color: gold; font-size: 300%;"></>Formulário </h1>
+        <h1>Test</h1>
+        <h1>Test 2</h1>
         <header>
-            <form>
+            <form
+            oninput="x.value = parseInt(a.value)+parseInt(b.value)"
+            >
 
                 <label for="pnome">Primeiro Nome</label> <br>
                 <input type="text" id="pnome" name="PrimeiroNome" value="Kelvyn"> <br>
@@ -14,14 +34,14 @@
                 <input type="text" id="Sobrenome" name="Sobrenome" value="Alves" <br>
 
                 <hr>
-                <h3>Sexo</h3>
+                <h3 style="background-color: blueviolet;">Sexo</h3>
                 <input type="radio" id="M" name="sexo" value="Masculino"> 
                 <label for="M">Masculino</label> 
                 <input type="radio" id="F" name="sexo" value="Feminino">
                 <label for="F">Feminino</label> 
 
                 <hr>
-                <h3>Comida Favorita</h3>
+                <h4>Comida Favorita</h3>
                 <input type="checkbox" id="fruta1" name="fruta1" value="Maçã"> 
                 <label for="fruta1">Maçã</label> <br>
                 <input type="checkbox" id="fruta2" name="fruta2" value="Banana">
@@ -85,9 +105,24 @@
                   <option value="Chrome">
                   <option value="Opera">
                   <option value="Safari">
-                </datalist>
+                </datalist> <br>
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" name="b" id="b" value="50">
+                =
+                <output name="x" for="a b"> </output>
 
+                <hr>
 
+                <video width="50%" controls muted>
+                    <source src="y2meta.mp4.mp4" type="video/mp4">
+                </video>
+               <br>
+                
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/uX4YEtyKdRo?si=4GmPgUQUgw6huIIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+               </iframe>
             </form>
         </header>
         
